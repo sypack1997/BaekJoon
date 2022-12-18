@@ -3,6 +3,6 @@ n_list = []
 
 for i in range(len(n)):
     for j in range(i, len(n)):
-        n_list.append(n[i:j])
+        n_list.append(n[i:j+1])
 
-print(len(n_list))
+print(len(set(n_list)))
